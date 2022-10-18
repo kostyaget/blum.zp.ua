@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+  <header>
+
+    <div class="topnav">
+      <a href="./index.html">
+        <img class="header__logo" src="./images/blum_logo_b.jpg" alt="" />
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="myLinks">
+        <a href="./pages/ware.html">ВИРОБИ</a>
+        <a href="./pages/services.html">СЕРВІСИ</a>
+        <a href="./pages/catalog.html">КАТАЛОГ</a>
+        <a href="./pages/contacts.html">КОНТАКТИ</a>
+      </div>
+    </div>
+
+
+  </header>
+  <section class="container">
+    <div class="container">
+      <div id="slider"></div>
+      <!-- <div class="slider">
+        <div class="slider-line">
+          <img src="./images/box1093_all_1485584.jpg" alt="">
+          <img src="./images/box1344_all_834558.jpg" alt="">
+          <img src="./images/box1345_all_896894.jpg" alt="">
+          <img src="./images/box1457_all_520518.jpg" alt="">
+        </div>
+      </div>
+      <button class="slider-prev">Prev</button>
+      <button class="slider-next">Next</button>
+
+    </div> -->
+    <script >
+    let data = [
+        "https://gyazo.com/f2483ea0884e464410faa0c84a552727.png",
+        "https://gyazo.com/a5e892094cc05497b148e9e8c6b4763b.png",
+        "https://gyazo.com/d58d893500f6551b155a1cb7b1099b74.png",
+      ];
+
+      /***/
+      let slider = document.getElementById("slider");
+      let index = 0, images /* список <img> внутри slider */;
+
+      (function __init__() {
+        slider.innerHTML = data.map(src => `<img src="${src}">`).join("");
+
+        images = slider.querySelectorAll("img");
+        images[index].classList.add("opaque");
+      })();
+
+      function next() {
+        images[index].classList.remove("opaque");
+        index = (index + 1) % images.length;
+        images[index].classList.add("opaque");
+      }
+
+      function prev() {
+        images[index].classList.remove("opaque");
+        index = (index - 1 + images.length) % images.length;
+        images[index].classList.add("opaque");
+      }
+
+      (function _loop() {
+        next();
+        setTimeout(_loop, 4000);
+      })();</script>
+    <script src="./js/navigation/nav-mobile.js"></script>
+  </section>
+</body>
+</html>
