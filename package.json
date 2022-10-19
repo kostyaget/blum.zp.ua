@@ -1,0 +1,19 @@
+{
+  "name": "blum.zp.ua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostyaget/blum.zp.ua.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kostyaget/blum.zp.ua/issues"
+  },
+  "homepage": "https://github.com/kostyaget/blum.zp.ua#readme"
+}

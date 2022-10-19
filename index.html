@@ -5,31 +5,45 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     
   </head>
   <body>
-  <header>
-
-    <div class="topnav">
-      <a class="logo-link" href="./index.html">
-        <img class="header__logo" src="./images/blum_logo_b.jpg" alt="" />
-      </a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div id="myLinks">
-        <a href="./pages/ware.html">ВИРОБИ</a>
-        <a href="./pages/services.html">СЕРВІСИ</a>
-        <a href="./pages/catalog.html">КАТАЛОГ</a>
-        <a href="./pages/contacts.html">КОНТАКТИ</a>
+    <div class="wrapper">
+  <header class="header">
+<div class="container">
+  <div class="header__body">
+    <a href="./index.html" class="header__logo">
+      <img src="./images/blum_logo_b.jpg" alt="" >
+    </a>
+      <div class="header__burger">
+        <span></span>
       </div>
-    </div>
-
-
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li>
+            <a href="./pages/ware.html" class="header__link">ВИРОБИ</a>
+          </li>
+          <li>
+            <a href="./pages/services.html" class="header__link">СЕРВІСИ</a>
+          </li>
+          <li>
+            <a href="./pages/catalog.html" class="header__link">КАТАЛОГ</a>
+          </li>
+          <li>
+            <a href="./pages/contacts.html" class="header__link">КОНТАКТИ</a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+</div>
   </header>
+</div>
+
   <section class="container">
     <div class="slider container">
       <div id="slider"></div>
@@ -69,6 +83,7 @@
         setTimeout(_loop, 4000);
       })();</script>
     <script src="./js/navigation/nav-mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   </section>
 </body>
 </html>
