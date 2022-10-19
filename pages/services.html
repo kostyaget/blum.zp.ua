@@ -7,36 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="header__div">
-                <nav class="header__nav">
-                    <img class="header__logo" src="../images/blum_logo_b.jpg" alt="" />
-                    <ul class="header__menu">
-                        <li class="header__menu-item list">
-                            <a class="header__menu-link" href="../../public/index.html">BLUM</a>
-                        </li>
-                        <li class="header__menu-item list">
-                            <a class="header__menu-link" href="./ware.html">ВИРОБИ</a>
-                        </li>
-                        <li class="header__menu-item list">
-                            <a class="header__menu-link-l current" href="./services.html">СЕРВІСИ</a>
-                        </li>
-                        <li class="header__menu-item list">
-                            <a class="header__menu-link" href="./catalog.html">КАТАЛОГ</a>
-                        </li>
-                        <li class="header__menu-item list">
-                            <a class="header__menu-link" href="./contacts.html">КОНТАКТИ</a>
-                        </li>
-                    </ul>
-                </nav>
+    
+        <div class="topnav">
+            <a href="../index.html">
+                <img class="header__logo" src="../images/blum_logo_b.jpg" alt="" />
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="myLinks">
+                <a href="../pages/ware.html">ВИРОБИ</a>
+                <a href="../pages/services.html">СЕРВІСИ</a>
+                <a href="../pages/catalog.html">КАТАЛОГ</a>
+                <a href="../pages/contacts.html">КОНТАКТИ</a>
             </div>
         </div>
+    
+    
     </header>
-
+    <script src="../js/navigation/nav-mobile.js"></script>
 </body>
 
 </html>

@@ -64,15 +64,18 @@ a {
     padding: 25px 0;
 }
 .header__logo{
-    /* font-family: var(--main-font); */
+    font-family: var(--main-font);
         font-weight: bold;
         font-size: 26px;
         line-height: 0.7;
-        /* identical to box height */
         color: #212121;
-        margin-right: 30px;
+        /* margin-right: 30px; */
 }
 
+.logo-link{
+    margin: 0px;
+    padding: 0px;
+}
 .header__nav {
     display: flex;
     align-items: center;
@@ -134,26 +137,33 @@ button {
     font-size: .9rem;
 }
 
+button:focus {
+    background: var(--accent-color);
+} 
+
 button:hover {
     background: var(--accent-color);
 }
 
-button:active {
+/* button:active {
     background: #000;
     color: #fff;
-}
+} */
 
 #slider {
+    display: flex;
+    align-items: center;
     position: relative;
+    /* padding-top: 100px; */
 }
 
 #slider img {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
 
-    width: 200px;
-    height: 200px;
+    width: 375px;
+    height: 350px;
 
     opacity: 0;
     transition: opacity 2s;
@@ -164,10 +174,10 @@ button:active {
 }
 
 .mobile-container {
-    max-width: 480px;
+    max-width: 375px;
     margin: auto;
     background-color: #555;
-    height: 500px;
+    height: 400px;
     color: white;
     border-radius: 10px;
 }
@@ -175,8 +185,10 @@ button:active {
 .topnav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 63px;
     overflow: hidden;
-    /* background-color: #333; */
+    /* background-color: var(--accent-color); */
     position: relative;
 }
 
@@ -185,8 +197,8 @@ button:active {
 }
 
 .topnav a {
-    color: black;
-    padding: 14px 16px;
+    /* color: black; */
+    /* padding: 14px 16px; */
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -194,8 +206,13 @@ button:active {
 
 .topnav a.icon {
     background: var(--accent-color);
-    display: block;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: block; */
+    /* position: absolute; */
+    /* margin-right: 10px; */
+    padding: 31px;
     right: 0;
     top: 0;
 }
