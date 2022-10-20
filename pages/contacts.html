@@ -6,29 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
-    <header>
-    
-        <div class="topnav">
-            <a href="../index.html">
-                <img class="header__logo" src="../images/blum_logo_b.jpg" alt="" />
-            </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <div id="myLinks">
-                <a href="../pages/ware.html">ВИРОБИ</a>
-                <a href="../pages/services.html">СЕРВІСИ</a>
-                <a href="../pages/catalog.html">КАТАЛОГ</a>
-                <a href="../pages/contacts.html">КОНТАКТИ</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="../index.html" class="header__logo">
+                        <img src="../images/blum_logo_b.jpg" alt="">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="./ware.html" class="header__link">ВИРОБИ</a>
+                            </li>
+                            <li>
+                                <a href="./services.html" class="header__link">СЕРВІСИ</a>
+                            </li>
+                            <li>
+                                <a href="./catalog.html" class="header__link">КАТАЛОГ</a>
+                            </li>
+                            <li>
+                                <a href="./contacts.html" class="header__link-current">КОНТАКТИ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="container">
+        <div class="contacts">
+            <div class="constacts__link">
+                <div class="constacts__link-adres">
+                    <p> м.Запоріжжя </p>
+                    <p> Південне шосе 2 </p>
+                </div>
+                <div class="constacts__link-number">
+                    <a href="tell+380504875890">+380504875890</a>
+                    <a href="tell+380962562167">+380962562167</a>
+                </div>
+                <div class="constacts__link-social">
+                    <a class="icon" href="https://www.facebook.com/profile.php?id=100068430592360">
+                        <svg class="icon">
+                            <use xlink:href="../svg/sprite.svg#face"></use>
+                        </svg>
+                    </a>
+                    <a class="icon" href="https://www.instagram.com/blum_zp/">
+                        <svg class="icon">
+                            <use xlink:href="../svg/sprite.svg#inst"></use>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <div class="contacts__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10706.880365661205!2d35.112474!3d47.864384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66dd2afd1d19%3A0x1dd56217fcee91d0!2sBlum%20Showroom!5e0!3m2!1sru!2sua!4v1666220617750!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
-    
-    
-    </header>
+    </section>
     <script src="../js/navigation/nav-mobile.js"></script>
 </body>
 </html>

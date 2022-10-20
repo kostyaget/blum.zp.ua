@@ -7,29 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-<header>
-
-    <div class="topnav">
-        <a href="../index.html">
-            <img class="header__logo" src="../images/blum_logo_b.jpg" alt="" />
-        </a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <div id="myLinks">
-            <a href="../pages/ware.html">ВИРОБИ</a>
-            <a href="../pages/services.html">СЕРВІСИ</a>
-            <a href="../pages/catalog.html">КАТАЛОГ</a>
-            <a href="../pages/contacts.html">КОНТАКТИ</a>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="../index.html" class="header__logo">
+                            <img src="../images/blum_logo_b.jpg" alt="">
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li>
+                                    <a href="./ware.html" class="header__link-current">ВИРОБИ</a>
+                                </li>
+                                <li>
+                                    <a href="./services.html" class="header__link">СЕРВІСИ</a>
+                                </li>
+                                <li>
+                                    <a href="./catalog.html" class="header__link">КАТАЛОГ</a>
+                                </li>
+                                <li>
+                                    <a href="./contacts.html" class="header__link">КОНТАКТИ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        
+        <section class="container">
+        <div class="ware">
+            <!-- <div class=""> -->
+                <div class="">
+                    <ul class="ware__list">
+                    <li class="ware__link">
+                        AVENTOS
+                    </li>
+                    <li class="ware__link">
+                        TANDEMBOX
+                    </li>
+                    <li class="ware__link">
+                        LEGRABOX
+                    </li>
+                    <li class="ware__link">
+                        MERIVOBOX
+                    </li>
+                    <li class="ware__link">
+                        MOVENTO
+                    </li>
+                    <li class="ware__link">
+                        TANDEM
+                    </li>
+                    <li class="ware__link">
+                        SPACE STEP
+                    </li>
+                    <li class="ware__link">
+                        SPACE CORNER
+                    </li>
+                    <li class="ware__link">
+                        SPACE TOWER
+                    </li>
+                    <li class="ware__link">
+                        SPACE TWIN
+                    </li>
+                    <li class="ware__link">
+                        ФІКСАТОР ПОЛИЦІ
+                    </li>
+                    </ul>
+                </div>
+            <!-- </div> -->
         </div>
+    </section>
     </div>
-
-
-</header>
 <script src="../js/navigation/nav-mobile.js"></script>
 </body>
 
