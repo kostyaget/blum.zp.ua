@@ -55,6 +55,7 @@ body{
     transition: all 0.3s ease 0s;
     background-color: #fff;
     color: #333;
+    margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,11 +72,12 @@ body{
 }
 
 .header {
-    position: fixed;
+    display: block;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 5;
 }
 .header:before {
     content: '';
@@ -113,6 +115,7 @@ z-index: 3;
     list-style: none;
     margin: 0px 0px 0px 20px;
 }
+
 .header__link {
     position: relative;
     color: #000;
@@ -127,7 +130,7 @@ z-index: 3;
     font-weight: bold;
     color: #fff;
     position: relative;
-    line-height: 1.14;
+    /* line-height: 1.14; */
     letter-spacing: 0.02em;
     /* color: #212121; */
     padding-bottom: 30px;
@@ -146,7 +149,8 @@ z-index: 3;
 }
 .header__link:hover,
 .header__link:focus{
-    color: #fff;
+        transition: all 0.3s ease 0s;
+        color: #fff;
 }
 .header__link:before {
     content: '';
@@ -160,14 +164,14 @@ z-index: 3;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: right;
-    -ms-transform-origin: right;
-    transform-origin: right;
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: -webkit-transform 0.25s;
-    -o-transition: transform 0.25s;
-    transition: transform 0.25s;
-    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .header__link:hover:before {
     -webkit-transform: scaleX(1);
@@ -176,11 +180,11 @@ z-index: 3;
     -webkit-transform-origin: left;
     -ms-transform-origin: left;
     transform-origin: left;
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: -webkit-transform 0.25s;
-    -o-transition: transform 0.25s;
-    transition: transform 0.25s;
-    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .header__burger {
@@ -256,10 +260,10 @@ z-index: 3;
         left: 0;
         width: 100%;
         height: 100%;
-        /* filter: blur(6px); */
-        background-color: var(--accent-color);
+        backdrop-filter: blur(6px);
+        background-color: #f15b24b8;
         padding: 70px 10px 20px 10px ;
-        transition: all 0.3s ease 0s;
+        transition: all 0.1s ease 0s;
     }
     .header__menu.active{
         top: 0;
@@ -295,11 +299,10 @@ z-index: 3;
     display: flex;
         align-items: center;
         position: relative;
-    padding-top: 100px; 
+    margin-top: 20px; 
 }
 
 .slider img {
-    padding-top: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -343,17 +346,17 @@ z-index: 3;
 .constacts__link-number {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     color: #ff9e7b;
-    font-size: 19px;
+    font-size: 25px;
     width: 100%;
     padding-bottom: 50px;
 }
-/* .constacts__link-number a:not(:last-child) {
+.constacts__link-number a:not(:last-child) {
     padding-bottom: 20px;
-} */
+}
 .constacts__link-number a:hover {
     color: var(--accent-color);
     transition: all 0.3s ease 0s;
@@ -388,19 +391,121 @@ z-index: 3;
 
 .ware {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    /* position: relative; */
 }
 .ware__list {
-    font-weight: bold;
     display: flex;
+    align-content: start;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-top: 100px;
+    
+    max-width: 100%;
+    margin-right: 50px;
+    /* margin-right: 200px; */
 }
 .ware__link {
-    padding-bottom: 30px;
+        padding-bottom: 30px;
+}
+.ware__controls {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ware__controls:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.ware__controls:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.ware__controls--cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 714px;
+}
+
+.ware__controls--cards_img {
+    max-width: 100%;
+}
+.ware__controls--cards_img-i {
+    max-width: 100%;
+}
+
+.ware__controls--cards_txt {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.ware__controls--cards_txt-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ware__controls--cards_txt-pbold {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.ware__controls--cards_txt-p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+@media (max-width: 986px) {
+    .ware__list {
+        min-width: 136px;
+        margin-right: 35px;
+    }
+    .ware__controls {
+        font-size: 14px;
+    }
+    .ware__link {
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .ware__list {
+        min-width: 110px;
+        margin-right: 25px;
+        }
+}
 
 
 
