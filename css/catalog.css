@@ -14,10 +14,12 @@
 @media (max-width: 768px) {
     .catalog {
         max-width: 650px;
+        max-height: 800px
     }
 }
 @media (max-width: 500px) {
     .catalog {
         max-width: 360px;
+        max-height: 800px
     }
 }
