@@ -1,4 +1,5 @@
 @import url(../fonts/Helvetica.ttf);
+@import url(../fonts/Helvetica-BoldOblique.ttf);
 
 .list {
     list-style: none;
@@ -9,6 +10,7 @@
 }
 
 :root {
+    --second-font:'Helvetica-BoldOblique', sans-serif;
     --main-font: 'Helvetica', sans-serif;
     /* --secondary-font: 'Raleway', sans-serif; */
     --accent-color: #F15A24;
