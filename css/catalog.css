@@ -1,0 +1,23 @@
+.catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.catalog iframe {
+    width: 100%;
+    height: 900px;
+}
+@media (max-width: 768px) {
+    .catalog {
+        max-width: 650px;
+    }
+}
+@media (max-width: 500px) {
+    .catalog {
+        max-width: 360px;
+    }
+}
