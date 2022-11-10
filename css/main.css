@@ -71,8 +71,10 @@ body{
 
 .container {
     max-width: 1180px;
+    /* margin: 0 auto; */
+    /* padding: 0px 10px; */
     margin: 0 auto;
-    padding: 0px 10px;
+        padding: 0;
 }
 
 .header {
@@ -325,6 +327,7 @@ justify-content: center;
 .slider {
     display: flex;
         align-items: center;
+        justify-content: center;
         position: relative;
     margin-top: 20px; 
 }
@@ -332,8 +335,9 @@ justify-content: center;
 .slider img {
     position: absolute;
     top: 0;
-    left: 0;
+    /* left: 0; */
     max-width: 100%;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 2s;
 }

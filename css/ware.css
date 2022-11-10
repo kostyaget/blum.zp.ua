@@ -25,7 +25,6 @@
     font-family: var(--main-font);
     font-size: 18px;
     font-weight: bold;
-    font-style: oblique;
     text-decoration: none;
 }
 
@@ -75,10 +74,12 @@
 
 .ware__controls--cards_img {
     max-width: 100%;
+    
 }
 
 .ware__controls--cards_img-i {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .ware__controls--cards_txt {
