@@ -237,6 +237,7 @@ justify-content: center;
         width: 30px;
         height: 20px;
         position: relative;
+        margin-right: 5px;
         z-index: 3;
     }
     .header__burger span {
@@ -330,6 +331,8 @@ justify-content: center;
         justify-content: center;
         position: relative;
     margin-top: 20px; 
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .slider img {
