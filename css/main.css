@@ -137,12 +137,13 @@ body{
     font-size: 25px;
     font-weight: bold;
     font-style: oblique;
-    color: var(--black-color);
+    color: var(--white-color);
     z-index: 3;
     margin-right: 2px;
 }
 .header-p-mob {
     display: none;
+    color: var(--white-color);
 }
 .header__list {
     display: flex;
@@ -272,7 +273,7 @@ justify-content: center;
         font-size: 16px;
         font-weight: bold;
         font-style: oblique;
-        color: var(--black-color);
+        color: var();
         z-index: 3;
         
         
