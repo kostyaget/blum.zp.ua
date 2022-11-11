@@ -80,7 +80,13 @@
 .ware__controls--cards_img-i {
     max-width: 100%;
     border-radius: 10px;
-    
+    transition: 0.5s;
+}
+
+
+.ware__controls--cards_img-i:hover {
+    transform: scale(1.05);
+    /* Увеличиваем масштаб */
 }
 
 .ware__controls--cards_txt {

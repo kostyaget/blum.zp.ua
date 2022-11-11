@@ -63,8 +63,12 @@
 .contacts__map {
     display: flex;
     align-items: center;
+    
     /* justify-content: flex-end; */
     width: 100%;
+}
+.contacts__map iframe{
+border-radius: 10px;
 }
 
 .icon {

@@ -1,5 +1,6 @@
 @import url(../fonts/Helvetica.ttf);
 @import url(../fonts/Helvetica-BoldOblique.ttf);
+@import url(../fonts/Arial-BoldMT.ttf);
 
 .list {
     list-style: none;
@@ -10,6 +11,7 @@
 }
 
 :root {
+    --font-header:'Arial-BoldMT', sans-serif;
     --second-font:'Helvetica-BoldOblique', sans-serif;
     --main-font: 'Helvetica', sans-serif;
     /* --secondary-font: 'Raleway', sans-serif; */
@@ -471,6 +473,20 @@ justify-content: center;
     border-radius: 15px;
     max-width: 100%;
 }
+.header-div-sec{
+display: flex;
+}
 
+.header-p1 {
+    font-family: var(--font-header);
+    font-size: 18px;
+}
 
+.header-p2 {
+    font-family: var(--font-header);
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 3px;
+    padding-left: 3px;
+}
 
