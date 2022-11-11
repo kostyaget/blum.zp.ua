@@ -450,5 +450,27 @@ justify-content: center;
     }
 }
 
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.image-slider__wrapper {}
+
+.image-slider__slide {}
+
+.swiper-slide {}
+
+.image-slider__image {
+    text-align: center;
+}
+.image-slider__image img{
+    border-radius: 15px;
+    max-width: 100%;
+}
+
 
 
