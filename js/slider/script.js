@@ -1,4 +1,4 @@
-new Swiper('.image-slider', {
+const swiper = new Swiper('.image-slider', {
     autoplay: {
         delay: 2000,
         stopOnLastSlide: false,
