@@ -14,6 +14,10 @@ const swiper = new Swiper('.image-slider', {
     fadeEffect: {
         crossFade: true
     },
-    
+    Keyboard:{ 
+        enabled:true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    }
 });
 
