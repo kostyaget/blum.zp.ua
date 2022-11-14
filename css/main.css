@@ -73,7 +73,7 @@ body{
 
 .container {
     max-width: 1180px;
-    /* max-height: 1200px; */
+    height: auto;
     /* margin: 0 auto; */
     /* padding: 0px 10px; */
     margin: 0 auto;
@@ -485,6 +485,10 @@ justify-content: center;
     .constacts__link-adres{
         color: var(--dark_adres-color);
     }
+}
+
+.image-slider{
+    
 }
 
 
