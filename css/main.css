@@ -264,7 +264,7 @@ body{
 .image-slider {
     width:781px;
     width: 95%;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .image-slider__image {
