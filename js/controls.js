@@ -8,10 +8,10 @@ refs.controls.addEventListener('click', onControlsClick);
 function onControlsClick(event) {
   event.preventDefault();
 
-  if (event.target.nodeName !== 'A') {
-    console.log('Кликнули не в ссылку');
-    return;
-  }
+  // if (event.target.nodeName !== 'A') {
+  //   console.log('Кликнули не в ссылку');
+  //   return;
+  // }
 
   const currentActiveControlItem = refs.controls.querySelector(
     '.controls__item--active',
