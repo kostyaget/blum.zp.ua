@@ -100,19 +100,19 @@
 }
 
 .ware__controls--cards_txt-title {
-    
+    font-family: var(--main-font);
     font-size: 30px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .ware__controls--cards_txt-pbold {
     font-size: 22px;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 20px;
 }
 
 .ware__controls--cards_txt-p {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: 22px;
     margin-top: 20px;
 }
@@ -190,10 +190,9 @@ html {
 } */
 
 .center {
-    width: 180px;
+    width: 197px;
     height: 60px;
-    position: absolute;
-    margin-top: 25px;
+    position: relative;
 }
 
 .btn {
@@ -206,7 +205,10 @@ html {
     outline: none;
     transition: 1s ease-in-out;
 }
-
+.btn p{
+    font-family: var(--main-font);
+font-weight: bold;
+}
 svg {
     position: absolute;
     left: 0;
@@ -235,4 +237,68 @@ svg {
 .btn:hover a{
     transition: 1s ease-in-out;
     color:#fff ;
+}
+
+.btn-reg {
+    display: inline-block;
+    width: 197px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+.btn-reg p{
+font-family: var(--main-font);
+font-weight: bold;
+
+}
+
+.btn-reg svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 510;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn-reg:hover {
+    transition: 1s ease-in-out;
+    background: var(--accent-color);
+}
+
+.btn-reg:hover svg {
+    stroke-dashoffset: -510;
+}
+
+.btn-reg a {
+    font-family: var(--main-font);
+    color: var(--accent-color);
+    font-size: 18px;
+}
+.btn-reg:hover a{
+    transition: 1s ease-in-out;
+    color:#fff ;
+}
+
+.cards__btn{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.alert-btn{
+    display: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+    padding-left: 5px;
+}
+.cards__btn:hover .alert-btn {
+    transition: 3s;
+    display: block;
 }
