@@ -171,6 +171,7 @@ body{
 }
 .header__list {
     display: flex;
+    align-items: center;
     position: relative;
     /* margin-right: 100px; */
     z-index: 2;
@@ -285,6 +286,7 @@ body{
     width: 160px;
     height: 40px;
     position: relative;
+    /* margin-left: 40px; */
     z-index: 3;
 }
 
@@ -332,6 +334,11 @@ body{
     transition: 1s ease-in-out;
     color:#fff ;
 }
+@media (max-width: 1005px) {
+    .center-header{
+        display: none;
+    }
+}
 
 @media (max-width: 832px) {
     
@@ -367,10 +374,10 @@ body{
         z-index: 3;
     }
     .center-header{
-        display: none;
+        display: flex;
     }
     .btn-header{
-        display: none;
+        /* display: none; */
     }
     .header__body{
         height: 50px;
@@ -473,6 +480,12 @@ body{
       }
   }
 
+  @media (max-width: 500px) {
+    .cards__btn {
+        align-items: flex-start;
+    flex-direction: column;
+    }
+  }
 
 
 

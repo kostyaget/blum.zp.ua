@@ -158,36 +158,9 @@
 .pane--active {
     display: block;
 }
-/* @media (prefers-color-scheme: dark) {
-    .ware__controls:before{
-    color: var(--white-color);
-    }
-} */
+
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-
-/* body,
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: #5CA4EA;
-    overflow: hidden;
-    font-family: 'Lato', sans-serif;
-} */
-
-/* .container {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .center {
     width: 197px;
@@ -207,8 +180,9 @@ html {
 }
 .btn p{
     font-family: var(--main-font);
-font-weight: bold;
+    font-weight: bold;
 }
+
 svg {
     position: absolute;
     left: 0;
