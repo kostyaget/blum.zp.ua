@@ -430,7 +430,7 @@ body{
         transform: scale(0);
     }
     .header__link {
-        color: #000;
+        color: var(--white-color);
         padding-bottom: 10px;
     }
     .header__link-current {
@@ -511,12 +511,6 @@ body{
     .header__link:before{
         background-color: var(--white-color);
     } */
-    .header__logo svg{
-        fill: var(--black-color);
-    }
-    .header__logo svg:hover {
-        fill: var(--white-color)
-    }
     .ware__controls:before {
         background-color: var(--white-color);
     }
