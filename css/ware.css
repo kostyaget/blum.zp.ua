@@ -116,45 +116,6 @@
     font-size: 22px;
     margin-top: 20px;
 }
-
-@media (max-width: 986px) {
-    .ware__list {
-        min-width: 136px;
-        margin-right: 35px;
-    }
-
-    .ware__controls {
-        font-size: 14px;
-    }
-
-    .ware__link {
-        padding-bottom: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .ware__list {
-        min-width: 110px;
-        margin-right: 25px;
-    }
-    .ware__controls--cards_txt-title {
-
-        font-size: 25px;
-        /* font-weight: bold; */
-    }
-
-    .ware__controls--cards_txt-pbold {
-        font-size: 15px;
-        /* font-weight: bold; */
-        margin-top: 10px;
-    }
-
-    .ware__controls--cards_txt-p {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-}
-
 .pane--active {
     display: block;
 }
@@ -208,9 +169,22 @@ svg {
     color: var(--accent-color);
     font-size: 18px;
 }
+
 .btn:hover a{
     transition: 1s ease-in-out;
     color:#fff ;
+}
+
+.btn a:hover .alert-btn{
+    transition: 3s;
+    display: block;
+}
+
+.alert-btn{
+    display: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 .btn-reg {
@@ -266,13 +240,43 @@ font-weight: bold;
     align-items: center;
     justify-content: flex-start;
 }
-.alert-btn{
-    display: none;
-    font-family: var(--main-font);
-    font-weight: bold;
-    padding-left: 5px;
+
+
+@media (max-width: 986px) {
+    .ware__list {
+        min-width: 136px;
+        margin-right: 35px;
+    }
+
+    .ware__controls {
+        font-size: 14px;
+    }
+
+    .ware__link {
+        padding-bottom: 15px;
+    }
 }
-.cards__btn:hover .alert-btn {
-    transition: 3s;
-    display: block;
+
+@media (max-width: 767px) {
+    .ware__list {
+        min-width: 110px;
+        margin-right: 25px;
+    }
+    .ware__controls--cards_txt-title {
+
+        font-size: 25px;
+        /* font-weight: bold; */
+    }
+
+    .ware__controls--cards_txt-pbold {
+        font-size: 15px;
+        /* font-weight: bold; */
+        margin-top: 10px;
+    }
+
+    .ware__controls--cards_txt-p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
 }
+
